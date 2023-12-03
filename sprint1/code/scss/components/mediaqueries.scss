@@ -1,0 +1,78 @@
+@use "./colors.scss";
+// 1581px
+@media screen and (max-width: 98.8125rem) {
+    .header {
+        height: 50vh;
+    }
+
+    .main {
+        flex-direction: row;
+
+        &_description {
+            transform: translateY(0);
+            height: 50rem;
+        }
+    }
+
+
+}
+
+// 1500px
+@media screen and (max-width: 93.75rem) {
+    .footer {
+        background: linear-gradient(60deg, colors.$darkest_red 30%, colors.$red 0);
+
+
+        &_wrapper {
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+
+    }
+}
+
+// 1000px
+
+@media screen and (max-width: 62.5rem) {
+    .nav {
+        flex-direction: column;
+        gap: 2rem;
+        height: max-content;
+
+        &_left,
+        &_right {
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        &_menu {
+            top: 16.7rem;
+        }
+
+        &_search{
+            color: colors.$red;
+        }
+        &_form {
+            top: 16.7rem;
+            left: 0;
+            width: max-content;
+            background: colors.$darkest_red_transparant;
+
+            &_fixed {
+                background: colors.$darkest_red;
+            }
+        }
+
+        &_submit {
+            background: colors.$red;
+        }
+
+        &_input {
+            border: colors.$red 0.3rem solid;
+        }
+
+
+    }
+
+}

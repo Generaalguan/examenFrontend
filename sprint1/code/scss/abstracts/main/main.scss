@@ -1,0 +1,82 @@
+@use "../../components/colors.scss";
+
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background: colors.$white_grey;    
+
+    &_description{
+        width: 50%;
+        height: 50rem;
+        background: colors.$white;
+        padding: 2rem 4rem;
+        transform: translateY(-20rem);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    &_titel{
+        color: colors.$red;
+        font-size: 200%;
+    }
+
+    &_text{
+        max-width: 77.7rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        &_wrapper{
+            display: flex;
+            flex-direction: column;
+            gap: 0.9rem;
+        }
+    }
+
+    &_p{
+        font-size: 120%;
+        font-weight: 400;
+
+    }
+}
+
+.slider{
+    width: 50%;
+    position: relative;
+
+    &_slide{
+        width: 100%;
+        height: 50rem;
+    }
+
+    &_img{
+        width: 100%;
+        height: 100%;
+    }
+
+    &_number{
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 120%;
+        font-weight: 700;
+        color: colors.$white;
+        background: colors.$red_transparant;
+        padding: 0.5rem 1rem;
+    }
+    &_text{
+        position: absolute;
+        bottom: 10%;
+        left: 0;
+        font-size: 120%;
+        font-weight: 700;
+        color: colors.$white;
+        background: colors.$red_transparant;
+        padding: 0.5rem 1rem;
+    }
+
+}
