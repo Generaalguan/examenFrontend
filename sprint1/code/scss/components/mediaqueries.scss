@@ -2,16 +2,18 @@
 // 1581px
 @media screen and (max-width: 98.8125rem) {
     .header {
-        height: 50vh;
+        height: 100vh;
     }
 
     .main {
         flex-direction: row;
+        height: 100%;
 
-        &_description {
+        &_wrapper {
             transform: translateY(0);
-            height: 50rem;
+            width: 100%;
         }
+
     }
 
 
@@ -75,4 +77,91 @@
 
     }
 
+    .main{
+        height: 100%;
+        &_wrapper{
+            flex-direction: column;
+        }
+        &_description{
+            width: 90%;
+
+        }
+
+    }
+    .slider{
+        width: 90%;
+    }
+
+}
+
+//900px
+@media screen and (max-width: 56.25rem) {
+    .footer{
+        background: linear-gradient(60deg, colors.$darkest_red 40rem, colors.$red 0);
+
+
+        &_bottom{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    .nav{
+        &_search {
+            display: none;
+            &-small{
+              display: block;
+            }
+          }
+          &_hamburgMenu {
+            display: none;
+            &-small{
+              display: block;
+            }
+          }
+    }
+    
+}
+
+//700px
+@media screen and (max-width: 43.75rem) {
+    .footer{
+        background: linear-gradient(60deg, colors.$darkest_red 70rem, colors.$red 0);
+
+    }
+}
+
+// 625px
+@media screen and (max-width: 39.0625rem) {
+    .nav{
+        &_titel{
+            font-size: 150%;
+        }
+    }
+    
+}
+
+//555px
+@media screen and (max-width: 34.6875rem) {
+    .nav{
+        &_titel{
+            font-size: 125%;
+            font-weight: 700;
+        }
+        &_left{
+            gap: 3rem;
+        }
+    }
+    
+}
+
+//500px
+
+@media screen and (max-width: 31.25rem) {
+    .nav{
+        &_titel{
+            font-size: 90%;
+        }
+    }
+    
 }

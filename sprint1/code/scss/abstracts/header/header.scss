@@ -65,6 +65,9 @@
     color: colors.$darkest_red;
     font-size: 150%;
     cursor: pointer;
+    &-small{
+      display: none;
+    }
   }
 
   &_form {
@@ -103,6 +106,9 @@
 
   &_hamburgMenu {
     width: 7.5rem;
+    &-small{
+      display: none;
+    }
   }
 
   &_menu {

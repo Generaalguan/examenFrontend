@@ -79,6 +79,9 @@ body {
   font-size: 150%;
   cursor: pointer;
 }
+.nav_search-small {
+  display: none;
+}
 .nav_form {
   display: flex;
   gap: 1rem;
@@ -109,6 +112,9 @@ body {
 }
 .nav_hamburgMenu {
   width: 7.5rem;
+}
+.nav_hamburgMenu-small {
+  display: none;
 }
 .nav_menu {
   position: absolute;
@@ -159,17 +165,24 @@ body {
 
 .main {
   width: 100%;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(90deg, #780000 20rem, #ff0101 0);
+}
+.main_wrapper {
+  width: 90%;
   height: 100%;
   display: flex;
   justify-content: center;
-  background: #eeeeee;
+  align-items: center;
+  transform: translateY(-10rem);
 }
 .main_description {
   width: 50%;
   height: 50rem;
   background: #ffffff;
   padding: 2rem 4rem;
-  transform: translateY(-20rem);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -303,14 +316,15 @@ body {
 
 @media screen and (max-width: 98.8125rem) {
   .header {
-    height: 50vh;
+    height: 100vh;
   }
   .main {
     flex-direction: row;
+    height: 100%;
   }
-  .main_description {
+  .main_wrapper {
     transform: translateY(0);
-    height: 50rem;
+    width: 100%;
   }
 }
 @media screen and (max-width: 93.75rem) {
@@ -352,6 +366,63 @@ body {
   }
   .nav_input {
     border: #ff0101 0.3rem solid;
+  }
+  .main {
+    height: 100%;
+  }
+  .main_wrapper {
+    flex-direction: column;
+  }
+  .main_description {
+    width: 90%;
+  }
+  .slider {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 56.25rem) {
+  .footer {
+    background: linear-gradient(60deg, #780000 40rem, #ff0101 0);
+  }
+  .footer_bottom {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav_search {
+    display: none;
+  }
+  .nav_search-small {
+    display: block;
+  }
+  .nav_hamburgMenu {
+    display: none;
+  }
+  .nav_hamburgMenu-small {
+    display: block;
+  }
+}
+@media screen and (max-width: 43.75rem) {
+  .footer {
+    background: linear-gradient(60deg, #780000 70rem, #ff0101 0);
+  }
+}
+@media screen and (max-width: 39.0625rem) {
+  .nav_titel {
+    font-size: 150%;
+  }
+}
+@media screen and (max-width: 34.6875rem) {
+  .nav_titel {
+    font-size: 125%;
+    font-weight: 700;
+  }
+  .nav_left {
+    gap: 3rem;
+  }
+}
+@media screen and (max-width: 31.25rem) {
+  .nav_titel {
+    font-size: 90%;
   }
 }
 
