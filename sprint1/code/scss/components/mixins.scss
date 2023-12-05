@@ -1,0 +1,9 @@
+@use "./colors.scss";
+@mixin cta{
+color: white;
+background: colors.$bright_red;
+border: none;
+width: 100%;
+height: 3.5rem;
+cursor: pointer;
+}

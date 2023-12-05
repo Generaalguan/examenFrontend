@@ -14,10 +14,27 @@
 .header {
   width: 100%;
   height: 100vh;
-  background-image: url("../../../img/gebouwen.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: colors.$grey;
+  // background-image: url("../../../img/gebouwen.webp");
+  // background-repeat: no-repeat;
+  // background-size: cover;
   background-position: 0;
+  position: relative;
+
+  &_description{
+    width: 100%;
+    height: max-content;
+    padding: 5rem;
+    background: colors.$black_transparant;
+    position: absolute;
+    bottom: 0;
+
+  }
+
+  &_h1{
+    color: colors.$white;
+    font-size: 250%;
+  }
 }
 
 .nav {
@@ -39,31 +56,21 @@
     position: fixed;
   }
 
-  &_left {
-    display: flex;
-    gap: 5rem;
-    justify-content: center;
-  }
-
-  &_titel {
-    color: colors.$darkest_red;
-    text-decoration: none;
-    font-size: 175%;
-    font-weight: 700;
-  }
 
   &_right {
     display: flex;
     gap: 5rem;
     justify-content: space-between;
-    width: 40rem;
+    width: 43rem;
+    height: 100%;
+    align-items: center;
   }
 
   //search
 
   &_search {
     color: colors.$darkest_red;
-    font-size: 150%;
+    font-size: 200%;
     cursor: pointer;
     &-small{
       display: none;

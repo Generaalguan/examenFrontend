@@ -16,6 +16,11 @@
 
     }
 
+    .projecten{
+        width: 90%;
+        border-radius: 1rem;
+    }
+
 
 }
 
@@ -38,29 +43,11 @@
 
 @media screen and (max-width: 62.5rem) {
     .nav {
-        flex-direction: column;
         gap: 2rem;
-        height: max-content;
-
-        &_left,
-        &_right {
-            justify-content: space-between;
-            width: 100%;
-        }
-
-        &_menu {
-            top: 16.7rem;
-        }
-
-        &_search{
-            color: colors.$red;
-        }
         &_form {
-            top: 16.7rem;
-            left: 0;
+            top: 10rem;
+            right: 30rem;
             width: max-content;
-            background: colors.$darkest_red_transparant;
-
             &_fixed {
                 background: colors.$darkest_red;
             }
@@ -82,13 +69,15 @@
         &_wrapper{
             flex-direction: column;
         }
-        &_description{
-            width: 90%;
-
-        }
-
+    }
+    .description{
+        width: 90%;
+        height: 100%;
     }
     .slider{
+        width: 90%;
+    }
+    .projecten{
         width: 90%;
     }
 
@@ -125,10 +114,22 @@
 
 //700px
 @media screen and (max-width: 43.75rem) {
+    .nav {
+        &_right{
+            justify-content: end;
+        }
+        &_form {
+            left: 0;
+            background: colors.$darkest_red_transparant;
+
+        }
+    }
     .footer{
         background: linear-gradient(60deg, colors.$darkest_red 70rem, colors.$red 0);
 
     }
+
+    
 }
 
 // 625px
@@ -159,8 +160,33 @@
 
 @media screen and (max-width: 31.25rem) {
     .nav{
-        &_titel{
-            font-size: 90%;
+        &_right{
+            gap: 3rem;
+        }
+        &_search{
+            &-small{
+                font-size: 125%;
+            }
+
+        }
+        &_hamburgMenu{
+            &-small{
+                width: 5rem;
+            }
+            
+        }
+    }
+    
+}
+
+//410px
+
+@media screen and (max-width: 25.625rem) {
+    .nav{
+        background: linear-gradient(60deg, colors.$darkest_red_transparant 17rem, colors.$red_transparant 0);
+
+        &_fixed {
+            background: linear-gradient(60deg, colors.$darkest_red 17rem, colors.$red 0);
         }
     }
     
