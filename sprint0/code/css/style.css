@@ -35,6 +35,9 @@ body {
   width: 100%;
   height: 100vh;
   background: #666666;
+  background-image: url("../../../img/gebouwen.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: 0;
   position: relative;
 }
@@ -318,22 +321,25 @@ body {
 }
 
 .organisatie {
-  width: 100%;
+  width: 80%;
+  height: 100%;
   background: #ffffff;
   padding: 2rem 4rem;
   display: flex;
   align-items: start;
-  flex-direction: column;
   gap: 3rem;
-  background: white;
+  border-radius: 5rem;
 }
 .organisatie_wrapper {
+  width: 100%;
+  height: 100%;
   display: flex;
-  gap: 2rem;
-  width: 80%;
-  flex-wrap: wrap;
-  border-radius: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 1rem;
   overflow: hidden;
+  gap: 4rem;
 }
 .organisatie_titel {
   color: #ff0101;
@@ -341,7 +347,7 @@ body {
   text-align: center;
 }
 .organisatie_text {
-  width: 100%;
+  max-width: 77.7rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -352,26 +358,12 @@ body {
   gap: 0.9rem;
 }
 .organisatie_p {
-  font-size: 2rem;
+  font-size: 120%;
   font-weight: 400;
 }
-.organisatie_ul {
-  padding-left: 5rem;
-  list-style: square;
-  max-width: 70ch;
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-}
-.organisatie_li {
-  font-size: 100%;
-}
 .organisatie_link {
-  color: #cd0000;
-  transition: all 3s;
-}
-.organisatie_link:hover {
-  color: #ff3434;
+  color: #004699;
+  width: max-content;
 }
 
 .footer {
@@ -475,6 +467,9 @@ body {
   }
 }
 @media screen and (max-width: 62.5rem) {
+  .header_h1 {
+    font-size: 200%;
+  }
   .nav {
     gap: 2rem;
   }
@@ -508,18 +503,6 @@ body {
   .projecten {
     width: 90%;
   }
-  .organisatie_titel {
-    color: #ff0101;
-    font-size: 2rem;
-    text-align: center;
-  }
-  .organisatie_header {
-    font-size: 1.7rem;
-  }
-  .organisatie_p {
-    font-size: 1.5rem;
-    font-weight: 400;
-  }
 }
 @media screen and (max-width: 56.25rem) {
   .footer {
@@ -543,6 +526,9 @@ body {
   }
 }
 @media screen and (max-width: 43.75rem) {
+  .header_h1 {
+    font-size: 150%;
+  }
   .nav_right {
     justify-content: end;
   }
@@ -554,14 +540,21 @@ body {
     background: linear-gradient(60deg, #780000 70rem, #ff0101 0);
   }
 }
-@media screen and (max-width: 39.0625rem) {
-  .header_h1 {
-    font-size: 150%;
-  }
-}
 @media screen and (max-width: 34.6875rem) {
+  .header_h1 {
+    font-size: 115%;
+  }
   .nav_left {
     gap: 3rem;
+  }
+  .description_titel {
+    font-size: 150%;
+  }
+  .description_header {
+    font-size: 100%;
+  }
+  .description_p {
+    font-size: 90%;
   }
 }
 @media screen and (max-width: 31.25rem) {

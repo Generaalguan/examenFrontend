@@ -16,7 +16,7 @@
 
     }
 
-    .projecten{
+    .projecten {
         width: 90%;
         border-radius: 1rem;
     }
@@ -42,12 +42,20 @@
 // 1000px
 
 @media screen and (max-width: 62.5rem) {
+    .header {
+        &_h1 {
+            font-size: 200%
+        }
+    }
+
     .nav {
         gap: 2rem;
+
         &_form {
             top: 10rem;
             right: 30rem;
             width: max-content;
+
             &_fixed {
                 background: colors.$darkest_red;
             }
@@ -64,151 +72,162 @@
 
     }
 
-    .main{
+    .main {
         height: 100%;
-        &_wrapper{
+
+        &_wrapper {
             flex-direction: column;
         }
     }
-    .description{
+
+    .description {
         width: 90%;
         height: 100%;
     }
-    .slider{
+
+    .slider {
         width: 90%;
     }
-    .projecten{
+
+    .projecten {
         width: 90%;
-    }
-
-    .organisatie{
-        &_titel {
-            color: colors.$red;
-            font-size: 2rem;
-            text-align: center;
-        }
-
-        &_header{
-            font-size: 1.7rem;
-        }
-
-        &_p {
-            font-size: 1.5rem;
-            font-weight: 400;
-    
-        }
     }
 
 }
 
 //900px
 @media screen and (max-width: 56.25rem) {
-    .footer{
+    .footer {
         background: linear-gradient(60deg, colors.$darkest_red 40rem, colors.$red 0);
 
 
-        &_bottom{
+        &_bottom {
             flex-wrap: wrap;
             justify-content: center;
         }
     }
 
-    .nav{
+    .nav {
         &_search {
             display: none;
-            &-small{
-              display: block;
+
+            &-small {
+                display: block;
             }
-          }
-          &_hamburgMenu {
+        }
+
+        &_hamburgMenu {
             display: none;
-            &-small{
-              display: block;
+
+            &-small {
+                display: block;
             }
-          }
+        }
     }
-    
+
 }
 
 //700px
 @media screen and (max-width: 43.75rem) {
+    .header{
+        &_h1{
+            font-size: 150%;
+        }
+    }
+    
     .nav {
-        &_right{
+        &_right {
             justify-content: end;
         }
+
         &_form {
             left: 0;
             background: colors.$darkest_red_transparant;
 
         }
     }
-    .footer{
+
+    .footer {
         background: linear-gradient(60deg, colors.$darkest_red 70rem, colors.$red 0);
 
     }
 
-    
+
 }
 
 // 625px
 @media screen and (max-width: 39.0625rem) {
-    .header{
-        &_h1{
-            font-size:150%;
-        }
-    }
-    
+
+
 }
 
 //555px
 @media screen and (max-width: 34.6875rem) {
-    // .header{
-    //     &_h1{
-    //         font-size: 125%;
-    //         font-weight: 700;
-    //     }
-    // }
-
-    .nav{
-        &_left{
-            gap: 3rem;
+    .header{
+        &_h1{
+            font-size: 115%;
         }
     }
     
+    .nav {
+        &_left {
+            gap: 3rem;
+        }
+    }
+
+    .description{
+
+        &_titel{
+            font-size: 150%;
+        }
+
+        &_header{
+            font-size: 100%;
+        }
+
+        &_p{
+            font-size: 90%;
+        }
+    }
+
+
+
 }
 
 //500px
 
 @media screen and (max-width: 31.25rem) {
-    .nav{
-        &_right{
+    .nav {
+        &_right {
             gap: 3rem;
         }
-        &_search{
-            &-small{
+
+        &_search {
+            &-small {
                 font-size: 125%;
             }
 
         }
-        &_hamburgMenu{
-            &-small{
+
+        &_hamburgMenu {
+            &-small {
                 width: 5rem;
             }
-            
+
         }
     }
-    
+
 }
 
 //410px
 
 @media screen and (max-width: 25.625rem) {
-    .nav{
+    .nav {
         background: linear-gradient(60deg, colors.$darkest_red_transparant 17rem, colors.$red_transparant 0);
 
         &_fixed {
             background: linear-gradient(60deg, colors.$darkest_red 17rem, colors.$red 0);
         }
     }
-    
+
 }
